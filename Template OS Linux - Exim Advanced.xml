@@ -262,7 +262,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[exim4]</key>
+                    <key>proc.num[exim]</key>
                     <delay>180</delay>
                     <history>60</history>
                     <trends>365</trends>
@@ -304,7 +304,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template OS Linux - Exim Advanced:proc.num[exim4].last(0)}&lt;1</expression>
+            <expression>{Template OS Linux - Exim Advanced:proc.num[exim].last(0)}&lt;1</expression>
             <name>Exim process is not running on {HOSTNAME}</name>
             <url/>
             <status>0</status>
